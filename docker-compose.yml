@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ansible-sut:
+    image: ansible:latest
+    container_name: ansible-sut
+    hostname: ansible-sut
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    privileged: yes

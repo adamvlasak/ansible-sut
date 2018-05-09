@@ -1,0 +1,2 @@
+[all]
+ansible-sut ansible_host=172.18.0.2 ansible_password=docker
