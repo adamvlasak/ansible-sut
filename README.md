@@ -2,17 +2,10 @@
 
 Simple docker container running SSH and systemd for ansible role testing purposes.
 
-## build image
-
-Please see Dockerfile.
-
-```
-docker build -t ansible-sut:latest .
-```
-
 ## define hosts
 
 ```
+$ cat hosts
 [all]
 ansible-sut ansible_host=<some IP> ansible_password=docker
 ```
@@ -22,7 +15,7 @@ ansible-sut ansible_host=<some IP> ansible_password=docker
 Please see docker-compose.yml.
 
 ```
-docker-compose run -d
+$ docker-compose up -d --build
 ```
 
 ## provision

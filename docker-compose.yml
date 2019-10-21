@@ -1,7 +1,7 @@
 version: '3'
 services:
   ansible-sut:
-    image: ansible-sut:latest
+    build: .
     container_name: ansible-sut
     hostname: ansible-sut
     volumes:
