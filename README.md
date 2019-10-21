@@ -1,6 +1,6 @@
 # ansible-sut
 
-Simple docker container running SSH and systemd for ansible role testing purposes.
+Simple docker container running SSH and systemd for ansible role testing purposes. You need working ansible.
 
 ## define hosts
 
@@ -18,8 +18,8 @@ Please see docker-compose.yml.
 $ docker-compose up -d --build
 ```
 
-## provision
+## provision ansible-sut container
 
 ```
-ansible all -i hosts -m setup
+$ ansible all -i hosts -m setup
 ```
